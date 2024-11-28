@@ -1,0 +1,83 @@
+<!-- 
+Autor: Xabier Gonzalez Hermo.
+Módulo: Lenguaje de marcas y Sistemas de gestión de la información.
+Tarea: LMSGI02 Tarea evaluativa 2. Sitio Web.
+UD: UD02
+Fecha: 28/11/2024
+Descripción: Este ejercicio se centra en la creación de una página web utilizando HTML y CSS, con un enfoque principal en el uso de Flexbox para alinear y distribuir los elementos de manera eficiente. La página incluye diversas secciones, como productos, noticias y contacto, adaptadas con Flexbox para una visualización responsiva y ordenada.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIDEOTXOKO - Noticias</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+
+        <section class="nombrePagina">
+
+            <img src="./images/mando.png" alt="logo tienda" width="100" height="100">
+            <h1>BIDEOTXOKO</h1>
+            <img src="./images/mando.png" alt="logo tienda" width="100" height="100">
+
+        </section>
+
+        <section class="navegacion">
+
+            <a href="./index.html" title="Inicio">INICIO</a>
+            <a href="./productos.html" title="Videojuegos">VIDEOJUEGOS</a>
+            <a href="./noticias.html" title="Noticias">NOTICIAS</a>
+            <a href="./contacto.html" title="Contacto">CONTACTO</a>
+
+        </section>
+
+    </header>
+
+
+    <section class="tituloApartado">
+        <h2>NOTICIAS</h2>
+        <p class="texto">¡Mantente al día con las últimas noticias del mundo gamer! En esta sección encontrarás toda la información actualizada sobre lanzamientos, eventos, actualizaciones y tendencias en la industria de los videojuegos. Desde novedades de los títulos más esperados hasta curiosidades que no querrás perderte, este es tu espacio para estar siempre informado. Pulsa sobre cualquier noticia para ampliar la información.</p>
+    </section>
+
+    <section class="productos">
+
+        <!-- Añado dentro de la etiqueta <a> la información del producto. De esta manera se puede clickar tanto en la foto como en el nombre para que te redirija a la página con todos los detalles del producto.-->
+        <!-- target="_blank" hace que el enlace se abra en una nueva pestaña. -->
+        <section class="cajaNoticias">
+            <a href="https://www.hobbyconsolas.com/noticias/no-mans-sky-registra-80-resenas-positivas-steam-completa-redencion-8-anos-despues-lanzamiento-alegria-hello-games-1426337" title="Noticias No Mans Sky" target="_blank"><img src="./images/nomanssky.jpg" alt="Noticias No Mans Sky"></a>
+            <p class="texto"><a href="https://www.hobbyconsolas.com/noticias/no-mans-sky-registra-80-resenas-positivas-steam-completa-redencion-8-anos-despues-lanzamiento-alegria-hello-games-1426337" title="Noticias No Mans Sky" target="_blank">No Man's Sky registra un 80% de reseñas positivas en Steam y completa su redención 8 años después del lanzamiento, para alegría de Hello Games.</a></p>
+        </section>
+
+        <section class="cajaNoticias">
+            <a href="https://www.hobbyconsolas.com/guias-trucos/mysims-skyheroes/trucos-mysims-coleccion-sofa-mantita-nintendo-switch-como-activarlos-todos-codigos-disponibles-1426143" title="Noticias My Sims" target="_blank"><img src="./images/noticiasmysims.jpg" alt="Noticias My Sims"></a>
+            <p class="texto"><a href="https://www.hobbyconsolas.com/guias-trucos/mysims-skyheroes/trucos-mysims-coleccion-sofa-mantita-nintendo-switch-como-activarlos-todos-codigos-disponibles-1426143" title="Noticias My Sims" target="_blank">Trucos de MySims: Colección Sofá y Mantita de Nintendo Switch: como activarlos y todos los códigos disponibles. Te desvelamos todos los trucos de este recopilatorio de MySims y MySyms Kingdom: consigue los mejores objetos de forma instantánea en ambos juegos.</a></p>
+        </section>
+
+        <section class="cajaNoticias">
+            <a href="https://www.hobbyconsolas.com/noticias/prometedor-juego-tronos-kingsroad-juego-mundo-abierto-recien-anunciado-tendra-escenas-sangrientas-sexuales-1426329" title="Noticias Juego de Tronos" target="_blank"><img src="./images/noticiasjuegodetronos.jpg" alt="Noticias Juego de Tronos"></a>
+            <p class="texto"><a href="https://www.hobbyconsolas.com/noticias/prometedor-juego-tronos-kingsroad-juego-mundo-abierto-recien-anunciado-tendra-escenas-sangrientas-sexuales-1426329" title="Noticias Juego de Tronos" target="_blank">El prometedor Juego de Tronos Kingsroad, el juego de mundo abierto recién anunciado, tendrá “escenas sangrientas y sexuales”. Juego de Tronos Kingsroad fue presentado hace unos días como un nuevo juego de mundo abierto para móviles con una pinta muy prometedora y ahora tenemos más detalles.</a></p>
+        </section>
+
+        <section class="cajaNoticias">
+            <a href="https://www.3djuegos.com/juegos/dragon-quest-3-hd-2d-remake/analisis/hubo-tiempo-que-jrpg-no-te-regalaban-nada-eran-dificilisimos-su-libertad-era-total-dragon-quest-iii-hd-2d-remake-nos-lleva-vuelta-a-esa-epoca-analisis" title="Noticias Dragon Quest"><img src="./images/noticiasquest.jpg" alt="Noticias Dragon Quest"></a>
+            <p class="texto"><a href="https://www.3djuegos.com/juegos/dragon-quest-3-hd-2d-remake/analisis/hubo-tiempo-que-jrpg-no-te-regalaban-nada-eran-dificilisimos-su-libertad-era-total-dragon-quest-iii-hd-2d-remake-nos-lleva-vuelta-a-esa-epoca-analisis" title="Noticias Dragon Quest">Hubo un tiempo en el que los JRPG no te regalaban nada, eran dificilísimos y su libertad era total. Dragon Quest III HD-2D Remake nos lleva de vuelta a esa época. Análisis. El clásico de Enix vuelve a la vida con un importante lavado de cara, pero su esencia intacta</a></p>
+        </section>
+
+    </section>
+
+    <footer>
+
+        <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">BIDEOTXOKO - UD02 Ejercicio Evaluativo 2 con fines educativos</span> by <span property="cc:attributionName">Xabier Gonzalez</span> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
+
+    </footer>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+/*
+Autor: Xabier Gonzalez Hermo.
+Módulo: Lenguaje de marcas y Sistemas de gestión de la información.
+Tarea: LMSGI02 Tarea evaluativa 2. Sitio Web.
+UD: UD02
+Fecha: 28/11/2024
+Descripción: Este ejercicio se centra en la creación de una página web utilizando HTML y CSS, con un enfoque principal en el uso de Flexbox para alinear y distribuir los elementos de manera eficiente. La página incluye diversas secciones, como productos, noticias y contacto, adaptadas con Flexbox para una visualización responsiva y ordenada.
+*/
+
+
+html {  /* Esta etiqueta CSS para html la he conseguido de la página CSS PATTERN. Es para poner un fondo más especial. */
+    --s: 300px;
+    --c1: #a7a7a7;
+    --c2: #3b3b3b;
+    --c3: #cfcfcf;
+    --c4: #ea3d4e;
+    
+    background:
+      conic-gradient(from  45deg at 75% 75%, var(--c3) 90deg,var(--c1) 0 180deg,#0000 0),
+      conic-gradient(from -45deg at 25% 25%, var(--c3) 90deg,#0000 0),
+      conic-gradient(from -45deg at 50% 100%,#0000 180deg,var(--c3) 0),
+      conic-gradient(from -45deg,var(--c1) 90deg, var(--c2) 0 225deg,var(--c4) 0);
+    background-size: var(--s) var(--s); 
+  }
+
+body{
+    margin: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 99vw;
+}
+
+header{
+    background-color: rgba(23, 23, 23, 0.97);
+    width: 98vw;
+    border-radius: 10px; /* Para suavizar los bordes del bloque*/
+    padding: 10px;
+    margin: 0px;
+    margin-left: 3px;
+    margin-right: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.nombrePagina{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(219, 219, 219);
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.navegacion{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(219, 219, 219, 0.97);
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+    flex-wrap: wrap;
+
+}
+
+a{
+    /* Al tratarse de enlaces, aparecían en azul y subrayados. Con esto eliminamos esa decoración. */
+    text-decoration: none;
+    color: black;
+}
+
+.productos{
+    width: 70%;
+    background-color: rgba(158, 158, 158, 0.97);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.cajaProducto{
+    width: 30%;
+    height: 350px;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.cajaProducto img {
+    width: 200px; /* Ajusta el tamaño de la imagen */
+    height: 290px;
+    border-radius: 10px;
+}
+
+.cajaNoticias{
+    width: 40%;
+    height: 300px;
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    background-color: rgba(133, 132, 132, 0.97);
+    border-radius: 10px;
+}
+
+.cajaNoticias img {
+    width: 200px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    border-radius: 10px;
+}
+
+.cajaInformacion{
+    width: 45%;
+    height: 600px;
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    border-radius: 10px;
+}
+
+.cajaInformacion img {
+    width: 400px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    border-radius: 10px;
+}
+
+.tituloApartado{
+    width: 70%;
+    background-color: rgba(158, 158, 158, 0.97);
+    padding: 10px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: bolder;
+    padding-top: 20px;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    background-color: rgba(23, 23, 23, 0.97);
+    width: 98vw;
+    border-radius: 10px; /* Para suavizar los bordes del bloque*/
+    padding: 10px;
+    margin: 0px;
+    margin-left: 3px;
+    margin-right: 3px;
+    text-align: center;
+    color: rgb(219, 219, 219);
+}
+
+.texto{
+    width: 75%;
+    font-weight: 500;
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+}
+
+form{
+    width: 50%;
+    height: 400px;
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: larger;
+    background-color: rgba(133, 132, 132, 0.97);
+    border-radius: 10px;
+
+}
